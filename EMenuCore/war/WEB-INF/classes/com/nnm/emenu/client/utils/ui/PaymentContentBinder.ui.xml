@@ -1,0 +1,153 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button">
+	<ui:style>
+	.parent {
+		background-color: #4d4d4d;
+	}
+	
+	.titleHeader {
+		width: 90%;
+		height: auto;
+		color: white;
+		font-weight: bold;
+		font-size: 160%;
+		vertical-align: middle;
+		text-align: center;
+		margin: auto;
+		padding-left: 5%;text-transform: none;
+	}
+	
+	.btnCancel {
+		width: 5%;
+		vertical-align: middle;
+		margin-left: auto;
+		margin-right: 4%;
+		margin-top: auto;
+		margin-bottom: auto;
+		color: white;
+		font-size: 200%;
+		text-align: center;
+		cursor: pointer;text-transform: none;
+	}
+	
+	.lbtitle {
+		color: white;
+		font-weight: lighter;
+		font-size: 120%;
+		vertical-align: middle;
+		text-align: left;
+		margin-left: 2%;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 45%;
+		height: auto;text-transform: none;
+	}
+	
+	.tb {
+		border: 1px;
+		border-color: black;
+		width: 40%;
+		height: 80%;
+		margin-left: 1%;
+		margin-top: auto;
+		margin-bottom: auto;
+		font-size: 120%;
+		padding-left: 10px;
+		font-weight: lighter;
+		color: graytext;text-transform: none;
+	}
+	
+	.lbprice {
+		color: white;
+		font-weight: lighter;
+		font-size: 120%;
+		vertical-align: middle;
+		text-align: left;
+		margin-left: 2%;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 10%;
+		height: auto;text-transform: none;
+	}
+	
+	.btnPayment {
+		border-radius: 4px;
+		background-color: #fbb03b;
+		text-align: center;
+		width: 40%;
+		height: 50%;
+		font-size: 125%;
+		font-weight: bold;
+		color: white;
+		vertical-align: middle;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 5%;
+		cursor: pointer;
+		padding-top: 4%;text-transform: none;
+	}
+	
+	.btnPrint {
+		background-color: #c1272d;
+		border-radius: 4px;
+		text-align: center;
+		width: 40%;
+		height: 50%;
+		margin-left: auto;
+		margin-right: 5%;
+		font-size: 125%;
+		font-weight: bold;
+		color: white;
+		margin-top: auto;
+		margin-bottom: auto;
+		vertical-align: middle;
+		cursor: pointer;
+		padding-top: 4%;text-transform: none;
+	}
+	</ui:style>
+	<f:FlexPanel ui:field="parent" width="100%" height="100%"
+		styleName="{style.parent}">
+		<f:FlexPanel ui:field="header" width="104%" height="10%">
+			<g:Label ui:field="titleHeader" styleName="{style.titleHeader}"></g:Label>
+			<b:Button ui:field="btnCancel" styleName="{style.btnCancel}"></b:Button>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="row1" width="100%" height="9%">
+			<g:Label ui:field="lbtitle1" styleName="{style.lbtitle}"></g:Label>
+			<g:TextBox ui:field="tb1" styleName="{style.tb}"></g:TextBox>
+			<g:Label ui:field="lbprice1" styleName="{style.lbprice}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="row2" width="100%" height="9%">
+			<g:Label ui:field="lbtitle2" styleName="{style.lbtitle}"></g:Label>
+			<g:TextBox ui:field="tb2" styleName="{style.tb}"></g:TextBox>
+			<g:Label ui:field="lbprice2" styleName="{style.lbprice}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="row3" width="100%" height="9%">
+			<g:Label ui:field="lbtitle3" styleName="{style.lbtitle}"></g:Label>
+			<g:TextBox ui:field="tb3" styleName="{style.tb}"></g:TextBox>
+			<g:Label ui:field="lbprice3" styleName="{style.lbprice}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="row4" width="100%" height="9%">
+			<g:Label ui:field="lbtitle4" styleName="{style.lbtitle}"></g:Label>
+			<g:TextBox ui:field="tb4" styleName="{style.tb}"></g:TextBox>
+			<g:Label ui:field="lbprice4" styleName="{style.lbprice}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="row5" width="100%" height="9%">
+			<g:Label ui:field="lbtitle5" styleName="{style.lbtitle}"></g:Label>
+			<g:TextBox ui:field="tb5" styleName="{style.tb}"></g:TextBox>
+			<g:Label ui:field="lbprice5" styleName="{style.lbprice}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="row6" width="100%" height="9%">
+			<g:Label ui:field="lbtitle6" styleName="{style.lbtitle}"></g:Label>
+			<g:TextBox ui:field="tb6" styleName="{style.tb}"></g:TextBox>
+			<g:Label ui:field="lbprice6" styleName="{style.lbprice}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="footer" width="100%" height="15%">
+			<b:Button ui:field="btnPayment" styleName="{style.btnPayment}"
+				important="true"></b:Button>
+			<b:Button ui:field="btnPrint" styleName="{style.btnPrint}"
+				important="true"></b:Button>
+		</f:FlexPanel>
+	</f:FlexPanel>
+</ui:UiBinder> 

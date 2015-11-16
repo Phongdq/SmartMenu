@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button">
+	<ui:style>
+	.imgFood {
+		width: 70%;
+		height: 50%;
+		border: 1px;
+		border-style: dashed;
+		border-color: gray;
+		margin-top: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2%;
+	}
+	
+	.titleFood {
+		font-size: 110%;
+		font-weight: bold;
+		color: #116388;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		height: 6%;
+		margin-top: 4%;text-transform: none;
+	}
+	
+	.lbPrice {
+		font-size: 125%;
+		font-weight: lighter;
+		color: red;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		height: 6%;
+		margin-top: 4%;text-transform: none;
+	}
+	
+	.btnAdd {
+		border-radius: 5px;
+		width: auto;
+		max-width: 70%;
+		min-width: 40%;
+		height: 10%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #00a99d;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 6%;
+		padding-top: 2%;
+		font-size: 110%;text-transform: none;
+	}
+	</ui:style>
+	<f:FlexPanel ui:field="parent" width="33%" height="100%">
+		<g:Image ui:field="imgFood" styleName="{style.imgFood}"></g:Image>
+		<g:Label ui:field="titleFood" styleName="{style.titleFood}"></g:Label>
+		<g:Label ui:field="lbPrice" styleName="{style.lbPrice}"></g:Label>
+		<b:Button ui:field="btnAdd" text="Add to order" styleName="{style.btnAdd}"
+			important="true"></b:Button>
+	</f:FlexPanel>
+</ui:UiBinder> 

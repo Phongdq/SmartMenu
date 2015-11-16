@@ -1,0 +1,101 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mgwt="urn:import:com.googlecode.mgwt.ui.client.widget"
+	xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:h="urn:import:com.googlecode.mgwt.ui.client.widget.header"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button"
+	xmlns:s="urn:import:com.googlecode.mgwt.ui.client.widget.panel.scroll"
+	xmlns:buttonbar="urn:import:com.googlecode.mgwt.ui.client.widget.buttonbar"
+	xmlns:u="urn:import:com.nnm.emenu.client.utils.ui">
+	<ui:style>
+	.headerLeft {
+		background-color: #116388;
+		width: 66.75%;
+		height: 100%;
+		vertical-align: center;
+	}
+	
+	.headerRight {
+		background-color: #242b3d;
+		width: 33.25%;
+		height: 100%;
+	}
+	
+	.tbSearch {
+		border-radius: 25px;
+		border-style: double;
+		border: 1px;
+		border-color: graytext;
+		width: 90%;
+		height: 70%;
+		min-height: 25px;
+		font-size: 130%;
+		margin-top: 7px;
+		padding-left: 10px;
+		text-transform: none;
+	}
+	
+	.iconEMenu {
+		width: auto;
+		height: 100%;
+		max-width: 100%;
+		margin: auto;
+		display: table-cell;
+	}
+	
+	.content {
+		width: 133%;
+		height: 80%;
+	}
+	
+	.menu {
+		background-color: #242b3d;
+	}
+	
+	.buttonSubMenu {
+		background-repeat: no-repeat;
+		background-position: center left 2%;
+		font-size: 150%;
+		text-align: left;
+		padding-left: 24%;
+		padding-top: 8%;
+		color: white;
+		font-weight: normal;
+		width: 100%;
+		height: 8%;
+		margin-top: auto;
+		margin-bottom: auto;
+		border-bottom: 2px;
+		border-bottom-color: white;
+		border-bottom-style: solid;
+	}
+	</ui:style>
+	<f:FlexPanel width="100%" height="100%" ui:field="parent">
+		<h:HeaderPanel width="100%" height="9%">
+			<f:FlexPanel ui:field="headerContentLeft" width="66.75%"
+				height="100%">
+			</f:FlexPanel>
+			<f:FlexPanel styleName="{style.headerRight}">
+				<g:Image styleName="{style.iconEMenu}" url="image/e_menu.png"></g:Image>
+			</f:FlexPanel>
+		</h:HeaderPanel>
+		<s:ScrollPanel width="100%" height="91%"
+			scrollingEnabledY="false" scrollingEnabledX="true" showScrollBarY="false"
+			showScrollBarX="false" ui:field="scrollContent">
+			<f:FlexPanel ui:field="content" width="133%" height="100%">
+				<f:FlexPanel styleName="{style.menu}" ui:field="menu"
+					height="100%" width="25%">
+					<s:ScrollPanel width="100%" height="100%">
+						<f:FlexPanel ui:field="menuContent" width="100%"
+							height="130%">
+						</f:FlexPanel>
+					</s:ScrollPanel>
+				</f:FlexPanel>
+				<f:FlexPanel width="50%" height="100%" ui:field="contentLeft">
+				</f:FlexPanel>
+				<f:FlexPanel width="25%" height="100%" ui:field="contentRight">
+				</f:FlexPanel>
+			</f:FlexPanel>
+		</s:ScrollPanel>
+	</f:FlexPanel>
+</ui:UiBinder> 

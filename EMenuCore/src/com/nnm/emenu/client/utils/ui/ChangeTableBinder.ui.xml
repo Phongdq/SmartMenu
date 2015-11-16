@@ -1,0 +1,84 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	
+	.lbHeader {
+		font-size: 150%;
+		margin: auto;
+		color: white;
+		font-weight: bold;
+		text-transform: none;
+	}
+	
+	.lb {
+		font-size: 130%;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: 1%;
+		text-transform: none;
+	}
+	
+	.tb {
+		width: 30px;
+		height: 30px;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-right: auto;
+		margin-left: 1%;
+		text-align: center;
+		font-size: 130%;
+		text-transform: none;
+	}
+	
+	.btnOk {
+		font-size: 130%;
+		width: 35%;
+		height: 40px;
+		margin: auto;
+		border-radius: 4px;
+		background-color: #fbb03b;
+		text-align: center;
+		padding-top: 10px;
+		cursor: pointer;
+		font-weight: bold;
+		text-transform: none;
+	}
+	
+	.btnCancel {
+		font-size: 130%;
+		width: 35%;
+		height: 40px;
+		margin: auto;
+		border-radius: 4px;
+		background-color: #c1272d;
+		text-align: center;
+		padding-top: 10px;
+		cursor: pointer;
+		font-weight: bold;
+		text-transform: none;
+	}
+	</ui:style>
+	<f:FlexPanel ui:field="parent" width="100%" height="100%">
+		<f:FlexPanel ui:field="header" width="100%" height="10%">
+			<g:Label ui:field="lbHeader" styleName="{style.lbHeader}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="content" width="100%" height="90%">
+			<f:FlexPanel ui:field="panelContent" width="100%" height="80%">
+				<g:Label ui:field="lb" styleName="{style.lb}"></g:Label>
+				<g:TextBox ui:field="tb" styleName="{style.tb}"></g:TextBox>
+			</f:FlexPanel>
+			<f:FlexPanel ui:field="panelButton" width="100%" height="20%">
+				<b:Button ui:field="btnOk" styleName="{style.btnOk}"
+					important="true"></b:Button>
+				<b:Button ui:field="btnCancel" styleName="{style.btnCancel}"
+					important="true"></b:Button>
+			</f:FlexPanel>
+		</f:FlexPanel>
+	</f:FlexPanel>
+</ui:UiBinder> 

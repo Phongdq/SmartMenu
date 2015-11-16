@@ -1,0 +1,62 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button">
+	<ui:style>
+	.panel {
+		border-bottom: 1px;
+		border-bottom-color: black;
+		border-bottom-style: solid;
+		border-left: 1px;
+		border-left-color: black;
+		border-left-style: solid;
+		border-top: 1px;
+		border-top-color: black;
+		border-top-style: solid;
+		display: inline-block;
+	}
+	
+	.panel_end {
+		height: 100%;
+		border: 1px;
+		border-color: black;
+		border-style: solid;
+	}
+	
+	.lb {
+		text-align: center;
+		color: black;
+		font-size: 120%;
+		font-weight: lighter;
+		margin: auto;
+		vertical-align: middle;
+		padding-top: 9px;text-transform: none;
+	}
+	</ui:style>
+	<f:FlexPanel ui:field="parent" width="98%" height="70px">
+		<f:FlexPanel ui:field="panelStt" styleName="{style.panel}"
+			width="7%" height="100%">
+			<g:Label ui:field="lbStt" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel styleName="{style.panel}" width="20%" height="100%">
+			<g:Label ui:field="lbName" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel styleName="{style.panel}" width="15%" height="100%">
+			<g:Label ui:field="lbCode" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel styleName="{style.panel}" width="10%" height="100%">
+			<g:Label ui:field="lbState" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel styleName="{style.panel}" width="10%" height="100%">
+			<g:Label ui:field="lbPrice" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel styleName="{style.panel}" width="15%" height="100%">
+			<g:Label ui:field="lbCategory" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel styleName="{style.panel}" width="10%" height="100%">
+			<g:Label ui:field="lbDate" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="note" width="13%" height="100%">
+		</f:FlexPanel>
+	</f:FlexPanel>
+</ui:UiBinder> 

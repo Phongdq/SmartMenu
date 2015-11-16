@@ -1,0 +1,75 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button">
+	<ui:style>
+	.image {
+		width: 90%;
+		height: 90%;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+	
+	.lb {
+		margin-left: 3%;
+		font-size: 110%;
+		color: black;
+		margin-top: 5%;
+		text-align: left;
+		text-transform: none;
+	}
+	
+	.panel {
+		border-bottom: 1px;
+		border-bottom-color: black;
+		border-bottom-style: solid;
+		border-left: 1px;
+		border-left-color: black;
+		border-left-style: solid;
+		border-top: 1px;
+		border-top-color: black;
+		border-top-style: solid;
+		display: inline-block;
+	}
+	
+	.panel_end {
+		height: 100%;
+		border: 1px;
+		border-color: black;
+		border-style: solid;
+	}
+	
+	.btnEdit {
+		width: 40%;
+		height: 50%;
+		margin-left: 5%;
+		margin-top: 25%;
+		background-position: center;
+	}
+	
+	.btnDelete {
+		width: 40%;
+		height: 50%;
+		margin-left: auto;
+		margin-right: 5%;
+		margin-top: 25%;
+		background-position: center;
+	}
+	</ui:style>
+	<f:FlexPanel ui:field="parent" width="96%">
+		<f:FlexPanel ui:field="panelImage" width="20%" height="100%"
+			styleName="{style.panel}">
+			<g:Image ui:field="image" styleName="{style.image}"></g:Image>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="panelName" width="30%" height="100%"
+			styleName="{style.panel}">
+			<g:Label ui:field="lbName" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="panelDes" width="30%" height="100%"
+			styleName="{style.panel}">
+			<g:Label ui:field="lbDes" styleName="{style.lb}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="panelNote" width="20%" height="100%">
+		</f:FlexPanel>
+	</f:FlexPanel>
+</ui:UiBinder> 

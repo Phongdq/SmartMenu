@@ -1,0 +1,146 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button"
+	xmlns:s="urn:import:com.googlecode.mgwt.ui.client.widget.panel.scroll">
+	<ui:style>
+	.title {
+		color: #116388;
+		font-size: 130%;
+		font-weight: bold;
+		margin: auto;
+		text-align: center;
+		text-transform: none;
+	}
+	
+	.btnClose {
+		width: 2%;
+		margin-bottom: auto;
+		margin-top: auto;
+		margin-right: 1%;
+		color: red;
+		font-size: 140%;
+	}
+	
+	.titleContentLeft {
+		font-size: 110%;
+		font-weight: bold;
+		margin: auto;
+		color: #116388;
+		text-align: center;
+		text-transform: none;
+	}
+	
+	.lbName {
+		font-size: 100%;
+		font-weight: bold;
+		margin-left: 2%;
+		margin-bottom: auto;
+		margin-top: auto;
+		color: black;
+		text-align: left;
+		text-transform: none;
+	}
+	
+	.tb {
+		margin-bottom: auto;
+		margin-left: 1%;
+		margin-top: auto;
+		padding-left: 10px;
+		color: black;
+		font-size: 110%;
+		text-transform: none;
+	}
+	
+	.ltb {
+		margin-bottom: auto;
+		margin-left: 1%;
+		margin-top: auto;
+		text-transform: none;
+	}
+	
+	.lbImage {
+		font-size: 100%;
+		font-weight: bold;
+		margin-top: 1%;
+		margin-left: 2%;
+		color: black;
+		text-align: left;
+		text-transform: none;
+	}
+	
+	.image {
+		width: 50%;
+		height: 50%;
+		margin: auto;
+	}
+	
+	.imageURL {
+		margin-left: auto;
+		margin-bottom: 2px;
+		margin-right: auto;
+		margin-top: auto;
+		text-transform: none;
+	}
+	
+	.ta {
+		margin-bottom: auto;
+		margin-top: auto;
+		padding-left: 10px;
+		padding-top: 10px;
+		margin-left: 1%;
+		text-transform: none;
+	}
+	
+	.btnAdd {
+		margin: auto;
+		width: 30%;
+		height: 50%;
+		padding-top: 1%;
+		color: white;
+		background-color: #3CB371;
+		text-align: center;
+		cursor: pointer;
+		text-transform: none;
+	}
+	</ui:style>
+	<f:FlexPanel ui:field="parent" width="100%" height="100%">
+		<f:FlexPanel ui:field="header" width="100%" height="10%">
+			<g:Label ui:field="title" styleName="{style.title}"></g:Label>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="content" width="100%" height="89%">
+			<f:FlexPanel ui:field="contentLeft" width="40%" height="100%">
+				<f:FlexPanel ui:field="paneltitle" width="100%" height="8%">
+					<g:Label ui:field="titleContentLeft" styleName="{style.titleContentLeft}"></g:Label>
+				</f:FlexPanel>
+				<f:FlexPanel ui:field="panelName" width="100%" height="10%">
+					<g:Label ui:field="lbName" width="25%" styleName="{style.lbName}"></g:Label>
+					<g:TextBox ui:field="tbName" height="75%" styleName="{style.tb}"></g:TextBox>
+				</f:FlexPanel>
+				<f:FlexPanel ui:field="panelParent" width="100%" height="10%">
+					<g:Label ui:field="lbParent" width="25%" styleName="{style.lbName}"></g:Label>
+					<g:ListBox ui:field="ltbParent" height="80%" styleName="{style.ltb}"></g:ListBox>
+				</f:FlexPanel>
+				<f:FlexPanel ui:field="panelImage" width="100%" height="27%">
+					<g:Label ui:field="lbImage" width="25%" styleName="{style.lbImage}"></g:Label>
+					<f:FlexPanel ui:field="subpanelImage">
+						<g:Image ui:field="image" styleName="{style.image}"></g:Image>
+						<g:Label ui:field="imageUrl" styleName="{style.imageURL}"></g:Label>
+					</f:FlexPanel>
+				</f:FlexPanel>
+				<f:FlexPanel ui:field="panelDes" width="100%" height="33%">
+					<g:Label ui:field="lbDes" width="25%" styleName="{style.lbImage}"></g:Label>
+					<g:TextArea ui:field="taDes" height="90%" styleName="{style.ta}"></g:TextArea>
+				</f:FlexPanel>
+				<f:FlexPanel ui:field="panelButton" width="100%" height="10%">
+					<b:Button ui:field="btnAdd" styleName="{style.btnAdd}"></b:Button>
+				</f:FlexPanel>
+			</f:FlexPanel>
+			<f:FlexPanel ui:field="contentRight" width="60%" height="100%">
+				<s:ScrollPanel width="100%" height="100%" ui:field="scroll">
+					<f:FlexPanel ui:field="scrollContent" width="100%"></f:FlexPanel>
+				</s:ScrollPanel>
+			</f:FlexPanel>
+		</f:FlexPanel>
+	</f:FlexPanel>
+</ui:UiBinder> 

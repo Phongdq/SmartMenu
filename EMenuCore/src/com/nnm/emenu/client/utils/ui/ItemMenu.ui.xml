@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button">
+	<ui:style>
+	.icon {
+		width: 18%;
+		height: 80%;
+		margin-left: 2%;
+		margin-top: auto;
+		margin-bottom: auto;
+		cursor: pointer;
+	}
+	
+	.title {
+		font-size: 140%;
+		color: white;
+		text-align: left;
+		margin-left: 5%;
+		width: 75%;
+		margin-top: auto;
+		margin-bottom: auto;
+		cursor: pointer;
+		text-transform: none;
+	}
+	
+	.btn {
+		background-color: transparent;
+		border-bottom: 2px;
+		border-bottom-color: white;
+		border-bottom-style: solid;
+		width: 100%;
+		height: 100%;
+		margin-left: -100%;
+		text-transform: none;
+	}
+	
+	.btn:ACTIVE {
+		background-color: rgba(150, 150, 150, 0.5);
+	}
+	</ui:style>
+	<f:FlexPanel ui:field="parent" width="100%">
+		<g:Image url="image/iconUser1.png" ui:field="icon" styleName="{style.icon}"></g:Image>
+		<g:Label ui:field="title" styleName="{style.title}"></g:Label>
+		<b:Button ui:field="btn" styleName="{style.btn}"></b:Button>
+	</f:FlexPanel>
+</ui:UiBinder> 

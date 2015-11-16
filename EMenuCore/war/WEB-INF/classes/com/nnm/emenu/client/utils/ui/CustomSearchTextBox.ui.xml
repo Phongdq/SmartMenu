@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:p="urn:import:com.googlecode.mgwt.ui.client.widget.panel">
+	<ui:style>
+	.parent {
+		margin: auto;
+		background-color: white;
+		border: 1px;
+		border-color: gray;
+		border-style: double;
+		border-radius: 25px;
+	}
+	
+	.tb {
+		width: 96%;
+		height: 100%;
+		padding-left: 3%;
+		border: none;
+		border-color: transparent;
+		border-style: double;
+		border-radius: 25px;
+		font-size: 145%;
+		font-weight: lighter;
+		text-transform: none;
+	}
+	
+	.icon {
+		width: auto;
+		height: 100%;
+		margin: auto;
+	}
+	</ui:style>
+	<g:HorizontalPanel ui:field="parent" styleName="{style.parent}">
+		<g:TextBox ui:field="tb" styleName="{style.tb}"></g:TextBox>
+		<g:Image ui:field="icon" styleName="{style.icon}" url="image/iconSearch.png"></g:Image>
+	</g:HorizontalPanel>
+</ui:UiBinder> 

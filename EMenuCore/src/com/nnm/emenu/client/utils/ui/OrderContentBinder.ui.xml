@@ -1,0 +1,136 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:f="urn:import:com.googlecode.mgwt.ui.client.widget.panel.flex"
+	xmlns:s="urn:import:com.googlecode.mgwt.ui.client.widget.panel.scroll"
+	xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.button">
+	<ui:style>
+	.parent {
+		background-color: #242b3d;
+	}
+	
+	.header {
+		background-color: #116388;
+	}
+	
+	.orderContent {
+		width: 96%;
+		height: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.imageOrder {
+		margin-left: 2%;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: auto;
+		height: 80%;
+	}
+	
+	.titleOrder {
+		font-size: 130%;
+		font-weight: bold;
+		color: white;
+		margin-left: 10px;
+		text-align: left;
+		margin-top: auto;
+		margin-bottom: auto;text-transform: none;
+	}
+	
+	.panelButtonChange {
+		margin-left: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-right: 1%;
+		height: 100%;		
+	}
+	
+	.lbTotal {
+		font-size: 110%;
+		color: black;
+		text-align: left;
+		margin-left: 2%;
+		width: 40%;
+		margin-right: auto;
+		font-weight: bold;
+		margin-top: 5px;text-transform: none;
+	}
+	
+	.totalMoney {
+		font-size: 110%;
+		color: black;
+		width: 40%;
+		margin-left: auto;
+		margin-right: 2%;
+		font-weight: bold;
+		text-align: right;
+		margin-top: 5px;text-transform: none;
+	}
+	
+	.btnPayment {
+		border-radius: 4px;
+		background-color: #fbb03b;
+		text-align: center;
+		width: 40%;
+		height: 50%;
+		font-weight: bold;
+		font-size: 140%;
+		color: white;
+		vertical-align: middle;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 5%;
+		cursor: pointer;
+		padding-top: 4%;text-transform: none;
+	}
+	
+	.btnCancel {
+		background-color: #c1272d;
+		border-radius: 4px;
+		text-align: center;
+		width: 40%;
+		height: 50%;
+		margin-left: auto;
+		margin-right: 5%;
+		font-size: 140%;
+		font-weight: bold;
+		color: white;
+		margin-top: auto;
+		margin-bottom: auto;
+		vertical-align: middle;
+		cursor: pointer;
+		padding-top: 4%;text-transform: none;
+	}
+	</ui:style>
+	<f:FlexPanel styleName="{style.parent}" width="100%"
+		height="100%">
+		<f:FlexPanel width="100%" height="13%" ui:field="header">
+			<g:Image url="image/iconUser.png" styleName="{style.imageOrder}"
+				ui:field="imgOrder"></g:Image>
+			<g:Label styleName="{style.titleOrder}" text="Chọn bàn"
+				ui:field="titleOrder"></g:Label>
+			<f:FlexPanel ui:field="panelButtonChange" styleName="{style.panelButtonChange}"></f:FlexPanel>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="orderContainer" width="100%"
+			height="75%">
+			<f:FlexPanel styleName="{style.orderContent}">
+				<s:ScrollPanel width="100%" height="100%" ui:field="scrollContent"
+					scrollingEnabledX="false">
+					<f:FlexPanel ui:field="orderContent" width="100%"
+						height="auto">
+					</f:FlexPanel>
+				</s:ScrollPanel>
+			</f:FlexPanel>
+			<f:FlexPanel ui:field="totalContent" width="100%" height="10%">
+				<g:Label ui:field="lbTotal" styleName="{style.lbTotal}"></g:Label>
+				<g:Label ui:field="totalMoney" styleName="{style.totalMoney}"></g:Label>
+			</f:FlexPanel>
+		</f:FlexPanel>
+		<f:FlexPanel ui:field="bottom" width="100%" height="12%">
+			<b:Button styleName="{style.btnPayment}" text="Thanh toán"
+				ui:field="btnPayment" important="true"></b:Button>
+			<b:Button styleName="{style.btnCancel}" text="Hủy" ui:field="btnCancel"
+				important="true"></b:Button>
+		</f:FlexPanel>
+	</f:FlexPanel>
+</ui:UiBinder> 
